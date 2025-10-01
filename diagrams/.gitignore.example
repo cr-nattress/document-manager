@@ -1,0 +1,64 @@
+# Diagram Images Git Ignore Example
+# Rename this file to .gitignore to use it
+
+# ============================================
+# OPTION 1: Ignore all generated images
+# ============================================
+# Recommended if you regenerate images as needed
+# Keeps repository lean (images are large binary files)
+
+*.png
+*.svg
+*.pdf
+*.jpg
+*.jpeg
+
+# Temporary mermaid files (should be auto-cleaned)
+*.mmd
+
+# ============================================
+# OPTION 2: Include images in version control
+# ============================================
+# Use this if you want images committed to git
+# Comment out the lines above and keep images
+
+# (No exclusions - commit everything)
+
+# ============================================
+# OPTION 3: Selective image inclusion
+# ============================================
+# Keep some images, ignore others
+# Example: Keep main diagrams, ignore detailed ones
+
+# Ignore all by default
+# *.png
+
+# Then include specific ones
+# !01-system-architecture-1.png
+# !02-database-erd-1.png
+
+# ============================================
+# Always ignore temporary files
+# ============================================
+
+# Temporary mermaid files
+*-temp-*.mmd
+
+# Node modules (if running scripts locally)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
